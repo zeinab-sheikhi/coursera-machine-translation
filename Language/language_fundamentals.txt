@@ -1,0 +1,30 @@
+Basic Units
+Words
+    basic units in most MT systems
+Word segmentation
+    word boundaries are not given in all languages
+Morphology
+    internal structure of words
+Part of Speech
+    role the word plays within a sentence
+    noun, ver, adjective, etc.
+Grammatical categories
+    property of items within a grammar of language; tense for verb, gender, number for noun
+
+Sentence Structure
+Phrase-structure grammar
+
+Semantics
+Meaning of natural language constructs
+
+Compositionality
+    Meaning of a sentence is composed of meaning of its parts
+
+Lexical Semantics
+The meaning of single words
+Difficulties:
+    one word can have multiple meanings
+    Polysemy: word with same surface have different meanings exp. interest, bank
+    Homonymy: a word can have totally different meaning exp. can
+
+How to separate each sentence into different words while languages other than English do not use spaces to separate words.
