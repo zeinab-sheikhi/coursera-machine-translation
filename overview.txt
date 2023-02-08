@@ -148,4 +148,41 @@ Error Analysis
         Missing words, word order, incorrect words
     Test suits
 
+Challenges of Human Evaluation:
+    Expensive
+    Subjective
+
+Quality Measures:
+    Intra annotator agreement
+        Agreement between different annotators(Do humans  who evaluate your system agree or disagree)
+        Mean k = 0.357 (ranked by different humans)
+    Inter annotator agreement
+        Agreement within an annotator(shown multiple times to one human to evaluate)
+        Mean k = 0.529
+
+Direct Assesment:
+    Given:
+        Source, Translation
+        Optional: reference translation
+    Evaluate:
+        Performance, adequacy, fluency
+    Scale:
+        1 - 5
+        Percentage
+    Problem:
+        Normalization across judges
+
+Ranking: 
+    Rank different systems according to perfomance
+        Ties allowed
+
+Post-editing: to correct the translation
+    Measurement effort:    
+        Time
+        Keystrokes
+
+Task-based Evaluation:
+    Ask questions after lecture
+
+
 
