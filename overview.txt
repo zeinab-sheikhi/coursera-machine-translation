@@ -104,3 +104,48 @@ Tokenization:
 True-casing:
     Recase first word in the sentence
 Numbers, Named Entites: replace numbers with <NUM>
+
+Evaluation: measuring quality of the translation
+Use cases of MT evaluation:
+    Application scenario
+    guide the research
+    system development
+
+Difficulties with the evaluation:
+                                            Reference: Everything is different now
+    Ambiguity: multiple correct translations => Everything has changed
+    small changes can be very important      => Nothing is different now
+    subjective                               => some things have changed
+
+Human Evaluation:
+    Gold Standard
+    Subjective
+    Expensive, and time-consuming
+
+Automatic Evaluation:
+    Cheap
+    Fast
+    Human refrence
+
+Granulaity
+    Sentence-based
+        Error-analysis
+        Difficult
+    Document-based
+        Most commonly used in automatic evalution
+    Task-based
+        Final goal
+        Dependent on several other components 
+    
+Adequacy vs. Fluency
+    Adequacy: Is the menaing translated correctly? => Different is everything now. (adequate but not fluent)
+    Fluency: Is the output fluent?                 => Nothing is different now. (fluent but not adequate)
+
+Error Analysis
+    Interpretable results
+    Identify most prominent error sources
+    Error classification
+        Missing words, word order, incorrect words
+    Test suits
+
+
