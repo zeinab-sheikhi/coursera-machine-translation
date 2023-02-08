@@ -28,3 +28,79 @@ Difficulties:
     Homonymy: a word can have totally different meaning exp. can
 
 How to separate each sentence into different words while languages other than English do not use spaces to separate words.
+
+Translation Mismatch
+Different information in the source and the target
+    Lexical Mismatch
+    Difficulty
+
+Translation Divergence
+Same information in the source and the target text
+Structural Divergence
+    word order
+Categorical Divergence
+    noun -> adjective
+Co-refrence:refering to object within and across sentence boundaries
+    Anaphora:he, she, it
+    Deictic refrence: now, here, I
+    Reference iwth synonyms
+
+Language is developing
+    new words
+    words from other language
+    social media
+
+Machine Translation Approaches:
+    Rule-based
+    Corpus-based
+
+Vauquois Triangle
+    Direct
+    Transfer
+    Interlingua
+
+Direct Approach
+    Dictionary-based translation
+    Translation memory
+
+Transfer-based Approach
+    1. analyze: source sentence=> abstract representation
+    2. transfer: source language representation => target language representation
+    3. generate: target language representation => surface from of target sentence
+
+Interlingua
+    intermediate language
+    abstract language-independent representation: pure meaning
+    1. analyze
+    2. generate 
+
+Statistical Machine Translation
+Learn model from data 
+Statistical Model:
+    create many alternatives
+    give score to each alternatives
+
+Neural Machine Translation:
+    one model
+    end-to-end training 
+learn source and target language representation
+significant improved translation quality
+
+In the corpus-based approaches, data is the main knowledge source.
+Source of data:
+    Monolingua in the form of raw text 
+    Parallel: pair of sentences in two languages
+
+Notations:
+source sentence => f=f1, f2, ..., fI index => i
+target sentence => e=e1, e2, ..., ej index => j
+
+Preprocessing:
+Idea: Make text as homogenous as possible
+Tokenization:
+    Separation into words
+    European languages mainly splitting of punctuation marks
+    Special cases: e.g. abbrevations
+True-casing:
+    Recase first word in the sentence
+Numbers, Named Entites: replace numbers with <NUM>
