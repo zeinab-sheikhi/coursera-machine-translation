@@ -185,4 +185,19 @@ Task-based Evaluation:
     Ask questions after lecture
 
 
+BLEU: Bilingual Evaluation Understudy
+Translation similar to reference is better
+    Count number of equal sentences
+    N-gram overlap
+        1-gram: how many words are equal in reference and in translation
+        2-gram: how many a group of two words are equal in reference and in translation
+        Geomatric mean: (1-gram * 2-gram * ... * n-gram) ^ 1 / n 
+        Brevity Penalty: 
+    Clipping: max count of n-gram in any refrence
+    Document level score: aggregate statistics over whole document
+
+Adequency is modeled by word precision
+Fluency is modeled by n-gram precision
+No recall: brevity penalty to prevent short sentences
+        
 
