@@ -200,4 +200,26 @@ Adequency is modeled by word precision
 Fluency is modeled by n-gram precision
 No recall: brevity penalty to prevent short sentences
         
+Word-based Statistical Machine Translation
+For implementing these models there is no need hand-written rules, but a large amount of data
 
+Lexicon: Store possible translations of a word
+for example to calculate the probability of the german word Wargen, we go through large English corpora,
+and then count the number of its different English translations.
+
+ALignment: Mapping between source and target words
+exp. NULL Ich besuche einen freund
+           I   visit   a    friend
+
+p(e, a | f) = epsilon / (5) ^ 4 * t(I|Ich) * t(visit|besuche) * t(a|einen) * t(friend|freund)
+ = epsilon / (5) ^ 4 * 0.5 * 0.3 * 0.8 * 0.4
+5 = number of source words in German + NULL
+
+problems if this model:
+incomplete data
+
+Expectation-Maximization Algorithm:
+1. Initialize the model
+2. Expectation step: Apply model to data
+3. Maximization step: Learn model from data
+4. Iterate step 2, 3 
