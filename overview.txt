@@ -223,3 +223,36 @@ Expectation-Maximization Algorithm:
 2. Expectation step: Apply model to data
 3. Maximization step: Learn model from data
 4. Iterate step 2, 3 
+
+# Language Model
+P(w) is the probability of all the words in a sentence
+
+Break Down
+P(w1, w2, .., wl) = P(w1) * P(w2|w1) * P(wl|w1, w2, .., wl-1)
+
+Approximation
+P(wl|w1, w2, .., wl-1)= P(wl|C(w1, w2, ..., wl-1))
+
+Markov Assumption
+probability only depends on previous n-1 words
+P(wl|w1, w2, .., wl-1)= P(wl|wl-n+1, ..., wl-1)
+
+
+I would like to swim
+
+Unigram P(like)
+Bi-gram P(like | would)
+Tri-gram P(like| I would)
+P(I would like to swim) = P(I | <s> <s>) * P(would| <s> I)
+* P(like | I would) * P(to | would like) * P(swim | like to )
+* P(</s> | to swim)
+
+P(w3 | w1, w2) = count(w1, w2, w3) / sum of count(w1, w2, w)
+P(to | I like) = C(I like to) / sum (I like )
+
+Smoothing
+problem:N-gram not seen => P(w) = 0
+Solution: 
+Interpolation/Back-off
+p1(w3|w1w2) = landa2p1(w3)+landa2p2(w3|w2)+landa3p3(w3|w1w2)
+
